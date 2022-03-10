@@ -64,11 +64,16 @@ if (!HasNumerals) {
 
 if (!HasSpecialCharact) {
   chars = chars.replace (specialChar, "")
-}
-
-else (!this);
-  alert("Must Choose at Least ONE")
-}
-
-else if (passwordSize < 8 && passwordSize >128);
 }}
+
+for (vari=0; i<passwordSize; i++);
+{var randomnumber = Math.floor(Math.random() * chars.length);
+  password += chars.substring (randomnumber + randomnumber ++);
+  
+}
+}
+else {alert= ("Must Choose number between 8 and 128!")};
+
+return password
+}
+
