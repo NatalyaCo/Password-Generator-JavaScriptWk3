@@ -21,7 +21,14 @@
 
 
 var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numerals = "0123456789";
+var specialChar = "!@#$%^&*()";
+var password = " ";
 
-document.addEventListener("click", writePassword);
+
+
+//document.addEventListener("click", writePassword);
 
 
