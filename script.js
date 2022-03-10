@@ -27,8 +27,12 @@ var numerals = "0123456789";
 var specialChar = "!@#$%^&*()";
 var password = " ";
 
+function generatePassword() {
+  var passwordSize = prompt("Choose between 8 and 128 charaters long")
+  console.log(passwordSize)
+
+}
 
 
-//document.addEventListener("click", writePassword);
-
+//document.addEventListener("click", writePassword);//
 
