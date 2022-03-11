@@ -25,55 +25,65 @@ var lowerCase = "abcdefghijklmnopqrstuvwxyz";
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numerals = "0123456789";
 var specialChar = "!@#$%^&*()";
-var password = " ";
+
 
 
 //document.addEventListener("click", writePassword);//
 function writePassword() {
-  var password = generatePassword; 
-  var passwordText = document.querySelector ("password");
+  var password = generatePassword();
+  var passwordText = document.querySelector("password");
 
-  passwordText.value = "passport";
+  passwordText.value = passport;
+}
+
+function copyPassword () {
+  var copyText = document.getElementById("password");
+  copyText.select();
 }
 
 function generatePassword() {
   var passwordSize = prompt("Choose between 8 and 128 charaters long")
   console.log(passwordSize)
 
-if (passwordSize >= 8 && passwordSize <=128)
+  var password = " ";
+  if (passwordSize >= 8 && passwordSize <= 128)
 
-{
-
-
-var HasLowerCase = confirm ("Include Lower Case Letters in Password?");
-var HasUpperCase = confirm ("Include Upper Case Letters in Password?");
-var HasNumerals = confirm ("Include Numerals in Password?")
-var HasSpecialCharact = confirm ("Include Special Characters in Password?")
+  {
 
 
+    var HasLowerCase = confirm("Include Lower Case Letters in Password?");
+    var HasUpperCase = confirm("Include Upper Case Letters in Password?");
+    var HasNumerals = confirm("Include Numerals in Password?")
+    var HasSpecialCharact = confirm("Include Special Characters in Password?")
 
-if (!HasLowerCase) {
- chars = chars.replace(lowerCase, "")}
 
-if (!HasUpperCase) {
-  chars = chars.replace(upperCase, "")
+
+    if (!HasLowerCase) {
+      chars = chars.replace(lowerCase, "")
+    }
+
+    if (!HasUpperCase) {
+      chars = chars.replace(upperCase, "")
+    }
+
+    if (!HasNumerals) {
+      chars = chars.replace(numerals, "")
+
+      if (!HasSpecialCharact) {
+        chars = chars.replace(specialChar, "")
+      }
+    }
+
+    for (vari = 0; i < passwordSize; i++); {
+      var randomnumber = Math.floor(Math.random() * chars.length);
+      password += chars.substring(randomnumber + randomnumber +1);
+
+    }
+  } else {
+    alert("Must Choose number between 8 and 128!")
+  }
+
+  return password;
 }
-
-if (!HasNumerals) {
-  chars = chars.replace(numerals, "")
-
-if (!HasSpecialCharact) {
-  chars = chars.replace (specialChar, "")
-}}
-
-for (vari=0; i<passwordSize; i++);
-{var randomnumber = Math.floor(Math.random() * chars.length);
-  password += chars.substring (randomnumber + randomnumber ++);
-  
-}
-}
-else {alert= ("Must Choose number between 8 and 128!")};
-
-return password
-}
+document.addEventListener ('click', writePassword);
 
