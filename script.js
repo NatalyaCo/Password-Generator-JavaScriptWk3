@@ -28,12 +28,12 @@ var specialChar = "!@#$%^&*()";
 
 
 
-//document.addEventListener("click", writePassword);//
+document.addEventListener("click", writePassword);
 function writePassword() {
   var password = generatePassword();
-  var passwordText = document.querySelector("password");
+  var passwordText = document.querySelector("#password");
 
-  passwordText.value = passport;
+  passwordText.value = password;
 }
 
 function copyPassword () {
@@ -74,9 +74,9 @@ function generatePassword() {
       }
     }
 
-    for (vari = 0; i < passwordSize; i++); {
+    for (var i =0; i < passwordSize; i++) {
       var randomnumber = Math.floor(Math.random() * chars.length);
-      password += chars.substring(randomnumber + randomnumber +1);
+      password += chars.substring(randomnumber,  randomnumber +1);
 
     }
   } else {
@@ -85,5 +85,7 @@ function generatePassword() {
 
   return password;
 }
-document.addEventListener ('click', writePassword);
+//document.addEventListener ('click', writePassword);
+
+//generateBtn.addEventListener("click", writePassword)
 
