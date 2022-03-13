@@ -8,4 +8,4 @@ This application uses functions and an array to randomize computer’s choices.
 
 https://natalyaco.github.io/Password-Generator-JavaScriptWk3/
 
-![Screenshot (1)](https://user-images.githubusercontent.com/99770212/158046159-f5f91262-4d59-4bc9-9fbe-5211b4303cf5.png)
+![Screenshot (45)](https://user-images.githubusercontent.com/99770212/158046193-5b44a313-39e2-4ea0-8ca3-3be391c25bc4.png)
